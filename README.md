@@ -16,9 +16,10 @@ Simple
 
 ```
 
-import deviceType from "@techbana/device-type-capture";
+import getDeviceTier from "@techbana/device-type-capture";
 
-const tier =  deviceType();
+const tier =  getDeviceTier();
+console.log(tier)
 
 ```
 
