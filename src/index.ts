@@ -8,6 +8,71 @@ interface NavigatorWithConnection extends Navigator {
   };
 }
 
+function getClientInfo(): object {
+  if (typeof window != "undefined") {
+    // Retrieve information about the client environment
+    const { userAgent, language, platform } = navigator;
+    const { width: screenWidth, height: screenHeight } = screen;
+    const browserName = getBrowserName();
+    const browserVersion = getBrowserVersion();
+    return {
+      userAgent,
+      language,
+      platform,
+      screenWidth,
+      screenHeight,
+      browserName,
+      browserVersion,
+    };
+  } else {
+    return {
+      node: true,
+      nodeVersion: process.version,
+    };
+  }
+}
+
+function getBrowserName() {
+  if (typeof window != "undefined") {
+    // Retrieve the name of the current browser
+    const userAgent = navigator.userAgent;
+    switch (true) {
+      case /Chrome/.test(userAgent):
+        return "Chrome";
+      case /Firefox/.test(userAgent):
+        return "Firefox";
+      case /Safari/.test(userAgent):
+        return "Safari";
+      case /Edge/.test(userAgent):
+        return "Edge";
+      case /MSIE|Trident/.test(userAgent):
+        return "IE";
+      default:
+        return "Unknown";
+    }
+  } else {
+    return {
+      node: true,
+      nodeVersion: process.version,
+    };
+  }
+}
+
+function getBrowserVersion() {
+  // Retrieve the version of the current browser
+  if (typeof window != "undefined") {
+    const userAgent = navigator.userAgent;
+    const regex = /(Chrome|Firefox|Safari|Edge|MSIE|Trident)\/([\d\.]+)/;
+    const match = userAgent.match(regex);
+    return match ? match[2] : "Unknown";
+  } else {
+    return {
+      node: true,
+      nodeVersion: process.version,
+    };
+  }
+}
+
 function getNetworkInformation(): {
   downlink: number | null;
   effectiveType: string | null;
@@ -79,9 +144,10 @@ function getNetworkInformation(): {
   return networkInfo;
 }
 
-function getDeviceTier(): {
+function deviceTypeCapture(): {
   tier: string;
   tierLevel: string;
+  clientInfo: object;
   tierDetails: {
     cpu: number;
     ram: number;
@@ -95,6 +161,7 @@ function getDeviceTier(): {
   // @ts-ignore
   const ram = navigator?.deviceMemory;
   const connection = getNetworkInformation();
+  const clientInfo = getClientInfo();
   let tier;
   let tierLevel;
 
@@ -123,6 +190,7 @@ function getDeviceTier(): {
   return {
     tier: tier,
     tierLevel: tierLevel,
+    clientInfo: clientInfo,
     tierDetails: {
       cpu: cpu,
       ram: ram,
@@ -134,4 +202,4 @@ function getDeviceTier(): {
   };
 }
 
-module.exports = getDeviceTier;
+module.exports = deviceTypeCapture;

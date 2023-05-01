@@ -1,6 +1,6 @@
 {
   "name": "@techbana/device-type-capture",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "This package helps identify and capture the device type (High/Medium/Low end based on connection quality, cpu, ram, saveData mode etc.) to give an option to use it for A/B test on client side, feature enable/disable etc.",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -9,7 +9,8 @@
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "packpackage": "cd lib && npm pack"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,7 @@
   },
   "homepage": "https://github.com/manishekhawat/device-type-capture#readme",
   "devDependencies": {
-    "@types/node": "^18.15.10",
+    "@types/node": "^18.16.3",
     "typescript": "^5.0.2"
   }
 }
