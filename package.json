@@ -10,11 +10,12 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "packpackage": "cd lib && npm pack"
+    "packpackage": "cd lib && npm pack",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manishekhawat/device-type-capture.git"
+    "url": "https://github.com/manishekhawat/device-type-capture.git"
   },
   "keywords": [
     "device",
@@ -32,6 +33,7 @@
   "homepage": "https://github.com/manishekhawat/device-type-capture#readme",
   "devDependencies": {
     "@types/node": "^18.16.3",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "semantic-release": "^21.0.2"
   }
 }
