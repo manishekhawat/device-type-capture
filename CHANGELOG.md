@@ -12,6 +12,6 @@
 
 - fix: fix bug to calculate right tier
 
-# 1.0.0 / 2023-05-
+# 0.1.0 / 2023-04-01
 
 - feat: add tier feature
