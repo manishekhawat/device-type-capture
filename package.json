@@ -11,7 +11,8 @@
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "packpackage": "cd lib && npm pack",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -33,7 +34,13 @@
   "homepage": "https://github.com/manishekhawat/device-type-capture#readme",
   "devDependencies": {
     "@types/node": "^18.16.3",
-    "typescript": "^5.0.2",
-    "semantic-release": "^21.0.2"
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^21.0.2",
+    "typescript": "^5.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

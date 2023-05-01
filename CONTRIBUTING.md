@@ -31,6 +31,7 @@ If you have a question about @techbana (not a bug report) please post it to tech
     - `for (..) {`
     - `while (..) {`
     - `function(err) {`
+- Follow semantic versioning and release guidelines using semantic-release-cli and commit through git-cz
 - Write tests and make sure they pass.
 - Write typings-tests if you modify the typescript-typings.
 
