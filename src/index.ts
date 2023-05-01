@@ -8,6 +8,10 @@ interface NavigatorWithConnection extends Navigator {
   };
 }
 
+function getCurrentTimestamp() {
+  return Date.now();
+}
+
 function getClientInfo(): object {
   if (typeof window != "undefined") {
     // Retrieve information about the client environment
@@ -148,6 +152,7 @@ function deviceTypeCapture(): {
   tier: string;
   tierLevel: string;
   clientInfo: object;
+  timestamp: number;
   tierDetails: {
     cpu: number;
     ram: number;
@@ -162,6 +167,7 @@ function deviceTypeCapture(): {
   const ram = navigator?.deviceMemory;
   const connection = getNetworkInformation();
   const clientInfo = getClientInfo();
+  const timestamp = getCurrentTimestamp();
   let tier;
   let tierLevel;
 
@@ -190,6 +196,7 @@ function deviceTypeCapture(): {
   return {
     tier: tier,
     tierLevel: tierLevel,
+    timestamp: timestamp,
     clientInfo: clientInfo,
     tierDetails: {
       cpu: cpu,
