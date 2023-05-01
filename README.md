@@ -4,7 +4,7 @@
 
 > ### _Note: This package can do what it promises, however this package is still under active development for feature enhancements. Please contribute back if you are able to find bugs/issues or want to contribute feature update to the package._
 
-> _Keeping this package as open source for everyone to know how identification of device type or tier could be done._
+> _Keeping this package as open source for everyone to know how identification of device type or tier could be done. Runs on Github actions._
 
 ## Installation
 
