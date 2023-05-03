@@ -1,6 +1,6 @@
 {
   "name": "@techbana/device-type-capture",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This package helps identify and capture the device type (High/Medium/Low end based on connection quality, cpu, ram, saveData mode etc.) to give an option to use it for A/B test on client side, feature enable/disable etc.",
   "main": "./lib/index.js",
   "module": "./lib/esm/index.js",
