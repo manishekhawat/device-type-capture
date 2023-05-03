@@ -75,7 +75,7 @@
     "**/*.{ts,tsx}": [
       "eslint --ext .ts,.tsx . --fix",
       "prettier --write --ignore-unknown",
-      "git add"
+      "git add ."
     ]
   }
 }
