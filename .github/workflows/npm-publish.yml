@@ -10,7 +10,20 @@ on:
     branches: [master]
 
 jobs:
+
+      
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Clean Install
+        run: npm ci
+      
   quality:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -21,14 +34,5 @@ jobs:
         run: npm run lint
       - name: Unit Testing
         run: npm run test
-      
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - run: npm ci
 
 
