@@ -1,6 +1,6 @@
-## Contributing to @techbana
+## Contributing to @techbana/device-type-capture
 
-If you have a question about @techbana (not a bug report) please post it to techbana@gmail.com
+If you have a question about @techbana/device-type-capture (not a bug report) please post it to techbana@gmail.com
 
 ### Reporting bugs
 
@@ -8,8 +8,8 @@ If you have a question about @techbana (not a bug report) please post it to tech
   - Please post any relevant code samples, preferably a standalone script that
     reproduces your issue. Do **not** describe your issue in prose. **Show your code.**
   - If the bug involves an error, please post the stack trace.
-  - Please post the version of @techbana that you're using.
-  - Please write bug reports in JavaScript (ES5, ES6, etc) that runs in Node.js and browser, **not** CoffeeScript, TypeScript, JSX, etc.
+  - Please post the version of @techbana/device-type-capture that you're using.
+  - Please write bug reports in JavaScript (ES5, ES6, etc) / TypeScript that runs in Node.js and browser, **not** CoffeeScript, JSX, etc.
 
 ### Requesting new features
 
@@ -48,11 +48,11 @@ To contribute to the documentation, just make your changes to the inline documen
 
 ## Financial contributions
 
-We are not accepting any financial contribution right now.
+We are not accepting any financial contribution right now. Thank you for considering though.
 
 ## Credits
 
 ### Contributors
 
 Thank you to all the people who have already contributed to @techbana, looking forward for more!
-Your recognition would be added here :)
+Your recognition would be added here and in readme.md as well. :)

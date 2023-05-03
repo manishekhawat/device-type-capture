@@ -65,7 +65,7 @@ console.log(tier)
 
 ## Contributing
 
-The main purpose of this repository is to continue evolving `@techbana`, making it faster and easier to use. Development of `@techbana` happens in the open on GitHub, and we are grateful to the community for contributing bugfixes and improvements. Read below to learn how you can take part in improving `@techbana`.
+The main purpose of this repository is to continue evolving `@techbana/device-type-capture`, making it faster and easier to use. Development of `@techbana/device-type-capture` happens in the open on GitHub, and we are grateful to the community for contributing bugfixes and improvements. Read below to learn how you can take part in improving `@techbana/device-type-capture`.
 
 ### Code of Conduct
 
@@ -73,7 +73,7 @@ We have adopted a Code of Conduct that we expect project participants to adhere 
 
 ### Contributing Guide
 
-Read our [contributing guide](./CONTRIBUTING.md) to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to `@techbana`.
+Read our [contributing guide](./CONTRIBUTING.md) to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to `@techbana/device-type-capture`.
 
 ### Good First Issues
 
@@ -81,4 +81,4 @@ To help you get your feet wet and get you familiar with our contribution process
 
 ### License
 
-`@techbana` is [MIT licensed](./LICENSE).
+`@techbana/device-type-capture` is [MIT licensed](./LICENSE).

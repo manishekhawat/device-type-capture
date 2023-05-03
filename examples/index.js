@@ -1,3 +1,3 @@
-import { getDeviceTier } from "@techbana/error-log-capture";
+import { deviceTypeCapture } from "@techbana/error-log-capture";
 
-console.log(getDeviceTier());
+console.log(deviceTypeCapture());
