@@ -1,3 +1,5 @@
+[No LONGER MAINTAINED - BECAUSE WE HAVE MIGRATED TO SEMANTIC RELEASE WHICH MAINTAIN RELEASE INFORMATION]
+
 # 1.0.0 / 2023-05-01
 
 - feat: exposed method name change to be compatible with runkit
