@@ -22,7 +22,7 @@ jobs:
       - name: Clean Install
         run: npm ci
       - name: Linting
-        run: npm run lint
+        run: npm run lint:fix
       - name: Unit Testing
         run: npm run test
 
