@@ -6,6 +6,10 @@ name: Publish Package
 on:
   release:
     types: [published]
+  workflow_run:
+    workflows: [Merge to Master]
+    types:
+      - completed
 
 jobs:
   publish-npm:
