@@ -68,6 +68,9 @@
       "master"
     ]
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "lib/**/*"
   ],
