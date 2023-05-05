@@ -16,13 +16,13 @@ on:
     branches: [ "master" ]
     paths-ignore:
       - '**/*.json'
-      - 'tsconfig.json'
+      - '*.json'
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ "master" ]
     paths-ignore:
       - '**/*.json'
-      - 'tsconfig.json'
+      - '*.json'
   schedule:
     - cron: '34 14 * * 0'
 
