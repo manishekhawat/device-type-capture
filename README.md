@@ -16,7 +16,7 @@ Simple
 
 ```
 
-import deviceTypeCapture from "@techbana/device-type-capture";
+import { deviceTypeCapture } from "@techbana/device-type-capture";
 
 const tier =  deviceTypeCapture();
 console.log(tier)
