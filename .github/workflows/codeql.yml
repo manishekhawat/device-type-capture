@@ -15,14 +15,12 @@ on:
   push:
     branches: [ "master" ]
     paths-ignore:
-      - '**/*.json'
-      - '*.json'
+      - 'tsconfig.json'
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ "master" ]
     paths-ignore:
-      - '**/*.json'
-      - '*.json'
+      - 'tsconfig.json'
   schedule:
     - cron: '34 14 * * 0'
 
