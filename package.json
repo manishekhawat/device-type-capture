@@ -1,7 +1,7 @@
 {
-  "name": "[PACKAGE_NAME]",
-  "version": "[PACKAGE_VERSION]",
-  "description": "[WHAT DOES THE PACKAGE DO]",
+  "name": "@techbana/device-type-capture",
+  "version": "2.0.0",
+  "description": "This package helps identify and capture the device type (High/Medium/Low end based on connection quality, cpu, ram, saveData mode etc.) to give an option to use it for A/B test on client side, feature enable/disable etc.",
   "main": "./lib/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
@@ -21,21 +21,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/USERNAME/REPO_NAME.git"
+    "url": "https://github.com/manishekhawat/device-type-capture.git"
   },
   "keywords": [
-    "[KEYWORDS_1]",
-    "[KEYWORDS_2]",
-    "[KEYWORDS_3]",
-    "[KEYWORDS_4]",
-    "[KEYWORDS_5]"
+    "device",
+    "type",
+    "tier",
+    "capture",
+    "connection",
+    "network",
+    "browser",
+    "clientinfo"
   ],
-  "author": "@USERNAME",
+  "author": "@manishekhawat",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/USERNAME/REPO_NAME/issues"
+    "url": "https://github.com/manishekhawat/device-type-capture/issues"
   },
-  "homepage": "https://github.com/USERNAME/REPO_NAME#readme",
+  "homepage": "https://github.com/manishekhawat/device-type-capture#readme",
   "devDependencies": {
     "@jest/globals": "^29.5.0",
     "@types/node": "^18.16.3",

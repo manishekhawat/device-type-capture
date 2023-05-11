@@ -1,1 +1,3 @@
-// give example of usage
+import { deviceTypeCapture } from "@techbana/error-log-capture";
+
+console.log(deviceTypeCapture());
