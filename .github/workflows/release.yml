@@ -7,13 +7,13 @@ on:
   release:
     types: [published]
   workflow_run:
-    workflows: [Merge to Master]
+    workflows: [Merge to Master/Main]
     types:
       - completed
 
 jobs:
   publish-npm:
-    if: ${{ github.ref == 'refs/heads/master' && github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.ref == 'refs/heads/main' && github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write # to be able to publish a GitHub release

@@ -1,19 +1,18 @@
-[No LONGER MAINTAINED - BECAUSE WE HAVE MIGRATED TO SEMANTIC RELEASE WHICH MAINTAIN RELEASE INFORMATION]
 
-# 1.0.0 / 2023-05-01
+# 1.0.0 / [YYYY-MM-DD]
 
 - feat: exposed method name change to be compatible with runkit
-- feat: add new method to capture browser name
-- feat: add new method to capture node version
-- feat: add method to capture browser details
+- feat: add new method to [feature name]
+- feat: add new method to [feature name]
+- feat: add method to [method feature]
 - docs: update README
 - docs: add CONTRIBUTING
 - docs: add CODE_OF_CONDUCT
 
-# 0.1.1 / 2023-04-01
+# 0.1.1 / [YYYY-MM-DD]
 
-- fix: fix bug to calculate right tier
+- fix: fix bug to [bug title]
 
-# 0.1.0 / 2023-04-01
+# 0.1.0 / [YYYY-MM-DD]
 
-- feat: add tier feature
+- feat: add [feature name]

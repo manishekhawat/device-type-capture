@@ -13,4 +13,4 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Please raise a bug in the issues section and drop an email to techbana@gmail.com for P0/P1 scenarios
+Please raise a bug in the issues section and drop an email to [YOUR@EMAIL.ADDRESS] for P0/P1 scenarios
